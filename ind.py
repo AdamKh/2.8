@@ -7,7 +7,7 @@ import datetime
 
 def get_human():
     """""
-    Запросить данные о работнике.
+    Запросить данные о человеке.
     """""
     # Запросить данные о человеке.
     surname = input("Фамилия: ")
@@ -27,7 +27,7 @@ def get_human():
 
 def display_human(humans):
     """""
-    Отобразить список работников
+    Отобразить список людей
     """""
     # Проверить что список людей не пуст
     if humans:
@@ -49,7 +49,7 @@ def display_human(humans):
         )
         print(line)
 
-        # Вывести данные о всех сотрудниках.
+        # Вывести данные о всех.
         for idx, worker in enumerate(humans, 1):
             date = worker.get('date', '')
             print(
